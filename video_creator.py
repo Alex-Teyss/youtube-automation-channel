@@ -1,7 +1,7 @@
 # Import the required module for text
 # to speech conversion
 from gtts import gTTS
-from moviepy.editor import *
+from moviepy.editor import AudioFileClip, ImageClip
 
 # The text that you want to convert to audio
 mytext = 'Welcome to my awesome youtube channel please subscribe and follow and hit the bell notification button !'
@@ -34,8 +34,5 @@ video = image.set_duration(duration)
 # Use set_audio method from image clip to combine the audio with the image
 video = video.set_audio(audio)
 
-# Set the FPS to 60
-video.fps = 60
-
 # Write the resuling video clip
-video.write_videofile("output.mp4")
+video.write_videofile("output.mp4", fps=60)

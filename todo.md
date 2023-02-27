@@ -6,4 +6,4 @@
 - Implement script that open up reddit
 - Scrap content from the reddit page
 - Connect Youtube to our app
-- Create the scipt for generate a video and uploads the Youtube Video
+- Create the script for generate a video and uploads the Youtube Video
